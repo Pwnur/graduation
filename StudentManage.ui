@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentManage</class>
+ <widget class="QDialog" name="StudentManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>540</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;DFKai-SB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>系统时间:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="timeline">
+      <property name="styleSheet">
+       <string notr="true">
+font: 75 14pt &quot;DFKai-SB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBox" name="studenttool">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>101</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBox::tab {
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                     stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+         border-radius: 5px;
+         color: darkgray;
+}
+QToolBox::tab:selected { /* italicize selected tabs */
+         font: italic;
+         color: brown;
+}
+QPushButton#headerLGButton
+{
+    background-color: transparent;
+    border: 0px;
+    image: url(:/loginbk1.jpg);
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>419</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Page 1</string>
+    </attribute>
+    <widget class="QPushButton" name="autobtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover { background-color: rgb(255, 170, 127); }
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>自动化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="elecautobtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }</string>
+     </property>
+     <property name="text">
+      <string>电气自动化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="inforbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }</string>
+     </property>
+     <property name="text">
+      <string>信息工程</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="combtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }</string>
+     </property>
+     <property name="text">
+      <string>通信工程</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="elecbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>300</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }</string>
+     </property>
+     <property name="text">
+      <string>电子技术</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>419</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Page 2</string>
+    </attribute>
+    <widget class="QPushButton" name="passwordbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }
+</string>
+     </property>
+     <property name="text">
+      <string>修改密码    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exitbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover { background-color: rgb(255, 170, 127); }
+</string>
+     </property>
+     <property name="text">
+      <string>退出系统    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton:hover { background-color: rgb(255, 170, 127); }
+</string>
+     </property>
+     <property name="text">
+      <string>注销账号    </string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>540</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;DFKai-SB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>学生用户：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="studentnameline">
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;DFKai-SB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStackedWidget" name="studentstack">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>641</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
